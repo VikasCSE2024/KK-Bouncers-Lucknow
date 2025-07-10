@@ -1,0 +1,74 @@
+<!-- Gallery Hero Section -->
+<section class="about-hero">
+  <div class="container">
+    <h1 class="about-title">Gallery</h1>
+    <p class="about-subtitle">Discover our portfolio of recent projects and creative work.</p>
+  </div>
+</section>
+
+<!-- Gallery Content Section -->
+<section class="company-story">
+  <div class="container">
+    <div class="story-content">
+      <div class="story-text">
+        <h2>Our Work</h2>
+        <p>We take pride in delivering high-quality projects for clients across various industries.</p>
+        <p>Browse our gallery to see examples of our web, mobile, and branding projects.</p>
+      </div>
+      <div class="story-image">
+        <div class="image-placeholder">
+          <span>🖼️</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Grid Section -->
+<section class="gallery-grid-section">
+  <div class="gallery-grid">
+    <div class="gallery-card" *ngFor="let img of galleryImages; let i = index" (click)="openLightbox(i)">
+      <img [src]="img.src" [alt]="img.alt" class="gallery-img" />
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div class="gallery-lightbox" *ngIf="lightboxOpen" (click)="closeLightbox()">
+  <div class="lightbox-content" (click)="$event.stopPropagation()">
+    <button class="lightbox-close" (click)="closeLightbox()">&times;</button>
+    <img [src]="galleryImages[lightboxIndex].src" [alt]="galleryImages[lightboxIndex].alt" class="lightbox-img" />
+  </div>
+</div>
+
+<!-- WhatsApp Call-to-Action Section -->
+<section class="whatsapp-cta-section">
+  <div class="container">
+    <div class="whatsapp-cta-content">
+      <div class="whatsapp-cta-text">
+        <h2>Ready to Get Started?</h2>
+        <p>Get instant quotes and book our professional bouncer services directly through WhatsApp. Our team is available 24/7 to assist you.</p>
+        <div class="whatsapp-features">
+          <div class="feature-item">
+            <span class="feature-icon">⚡</span>
+            <span>Instant Response</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">💰</span>
+            <span>Quick Quotes</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🛡️</span>
+            <span>Professional Service</span>
+          </div>
+        </div>
+      </div>
+      <div class="whatsapp-cta-button">
+        <a href="https://wa.me/919695521037?text=Hello%2C%20I%20am%20interested%20in%20hiring%20bouncers%20in%20Lucknow.%20Please%20share%20the%20details." target="_blank" class="whatsapp-cta-btn">
+          <img src="assets/images/whatsapplogo.png" alt="WhatsApp" class="whatsapp-icon-img">
+          <span class="whatsapp-text">Chat on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
