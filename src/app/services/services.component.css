@@ -477,30 +477,6 @@
   list-style: none;
 }
 
-.entry-policy-intro {
-  max-width: 800px;
-  margin: 1.5rem auto 0 auto;
-  background: #fff;
-  border-radius: 10px 10px 0 0;
-  padding: 1.2rem 1.5rem 0.5rem 1.5rem;
-  color: #333;
-  font-size: 1.05rem;
-  box-shadow: 0 2px 12px 0 rgba(102, 126, 234, 0.06);
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.entry-policy-intro p {
-  margin: 0;
-  font-weight: 600;
-  color: #e53935;
-}
-
-.entry-policy-list {
-  border-radius: 0 0 10px 10px;
-  margin-top: 0;
-  border-top: none;
-}
-
 .bouncer-services-list li,
 .staff-qualifications-list li,
 .entry-policy-list li {
