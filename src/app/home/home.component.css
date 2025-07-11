@@ -414,8 +414,8 @@
 .home-gallery-section {
   width: 100vw;
   background: #f8f9fa;
-  padding: 2.5rem 0 2rem 0;
-  margin: 0;
+  padding: 4rem 0 3rem 0;
+  margin: 0 -2rem;
 }
 .home-gallery-section .container {
   max-width: 1200px;
@@ -424,19 +424,19 @@
 .gallery-scroll-row {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
   overflow: hidden;
   width: 100%;
   position: relative;
-  margin-top: 1.5rem;
-  height: 130px;
+  margin-top: 2.5rem;
+  height: 300px;
 }
 .gallery-scroll-row img {
-  width: 180px;
-  height: 120px;
+  width: 250px;
+  height: 350px;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(44,62,80,0.2);
   flex-shrink: 0;
   background: #e1e5ea;
   transition: transform 0.2s;
@@ -455,11 +455,11 @@
 }
 @media (max-width: 900px) {
   .gallery-scroll-row img {
-    width: 120px;
-    height: 80px;
+    width: 500px;
+    height: 300px;
   }
   .gallery-scroll-row {
-    height: 90px;
+    height: 300px;
     gap: 1rem;
   }
 }
@@ -468,8 +468,8 @@
     padding: 1.2rem 0 1rem 0;
   }
   .gallery-scroll-row img {
-    width: 90px;
-    height: 60px;
+    width: 500px;
+    height: 300px;
   }
   .gallery-scroll-row {
     height: 65px;

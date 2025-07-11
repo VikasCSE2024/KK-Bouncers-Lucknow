@@ -422,7 +422,7 @@
   background: #fff;
   border-radius: 14px;
   box-shadow: 0 4px 24px 0 rgba(102, 126, 234, 0.10);
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
@@ -436,8 +436,8 @@
 }
 
 .service-img-placeholder {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 12px;
   margin-bottom: 1.2rem;
@@ -460,6 +460,15 @@
   color: #444;
   font-size: 1.05rem;
   margin-bottom: 0;
+}
+
+.main-service-card img.service-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+  display: block;
 }
 
 /* Bouncer Services, Staff Qualifications, Entry Policy */
@@ -507,6 +516,10 @@
   position: absolute;
   left: 0;
   font-size: 1.1rem;
+}
+
+.entry-policy-list li:first-child::before {
+  content: "";
 }
 
 .services-note {

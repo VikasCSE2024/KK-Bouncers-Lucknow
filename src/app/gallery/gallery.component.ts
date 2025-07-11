@@ -98,18 +98,18 @@ export class GalleryComponent {
   ];
 
   galleryImages = [
-    { src: 'https://via.placeholder.com/600x400?text=Gallery+1', alt: 'Gallery Image 1' },
-    { src: 'https://via.placeholder.com/600x400?text=Gallery+2', alt: 'Gallery Image 2' },
-    { src: 'https://via.placeholder.com/600x400?text=Gallery+3', alt: 'Gallery Image 3' },
-    { src: 'https://via.placeholder.com/600x400?text=Gallery+4', alt: 'Gallery Image 4' },
-    { src: 'https://via.placeholder.com/600x400?text=Gallery+5', alt: 'Gallery Image 5' },
-    { src: 'https://via.placeholder.com/600x400?text=Gallery+6', alt: 'Gallery Image 6' },
-    { src: 'https://via.placeholder.com/600x400?text=Gallery+7', alt: 'Gallery Image 7' },
-    { src: 'https://via.placeholder.com/600x400?text=Gallery+8', alt: 'Gallery Image 8' },
-    { src: 'https://via.placeholder.com/600x400?text=Gallery+9', alt: 'Gallery Image 9' },
-    { src: 'https://via.placeholder.com/600x400?text=Gallery+10', alt: 'Gallery Image 10' },
-    { src: 'https://via.placeholder.com/600x400?text=Gallery+11', alt: 'Gallery Image 11' },
-    { src: 'https://via.placeholder.com/600x400?text=Gallery+12', alt: 'Gallery Image 12' }
+    { src: 'assets/images/bouncer1.jpeg', alt: 'Bouncer 1' },
+    { src: 'assets/images/bouncer2.jpeg', alt: 'Bouncer 2' },
+    { src: 'assets/images/bouncer3.jpeg', alt: 'Bouncer 3' },
+    { src: 'assets/images/bouncer4.jpeg', alt: 'Bouncer 4' },
+    { src: 'assets/images/bouncer5.jpeg', alt: 'Bouncer 5' },
+    { src: 'assets/images/bouncer6.jpeg', alt: 'Bouncer 6' },
+    { src: 'assets/images/bouncer7.jpeg', alt: 'Bouncer 7' },
+    { src: 'assets/images/bouncer8.jpeg', alt: 'Bouncer 8' },
+    { src: 'assets/images/bouncer9.jpeg', alt: 'Bouncer 9' },
+    { src: 'assets/images/bouncer10.jpeg', alt: 'Bouncer 10' },
+    { src: 'assets/images/bouncer11.jpeg', alt: 'Bouncer 11' },
+    { src: 'assets/images/bouncer12.jpeg', alt: 'Bouncer 12' },
   ];
   lightboxOpen = false;
   lightboxIndex = 0;

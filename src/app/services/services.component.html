@@ -8,35 +8,28 @@
 
     <h2 class="section-title">Main Services</h2>
     <div class="main-services-grid">
-      <div class="main-service-card">
-        <div class="service-img-placeholder"></div>
-        <h3>Event Security</h3>
-        <p>We maintain safety and order at all types of public or private events.</p>
-      </div>
-      <div class="main-service-card">
-        <div class="service-img-placeholder"></div>
-        <h3>Personal Security</h3>
-        <p>Trained bodyguards for personal protection and VIP security.</p>
-      </div>
-      <div class="main-service-card">
-        <div class="service-img-placeholder"></div>
-        <h3>Marriage Security</h3>
-        <p>Secure and peaceful environment during wedding functions.</p>
-      </div>
-      <div class="main-service-card">
-        <div class="service-img-placeholder"></div>
-        <h3>Industrial Security</h3>
-        <p>Protection for construction sites, factories, and industrial areas.</p>
-      </div>
-      <div class="main-service-card">
-        <div class="service-img-placeholder"></div>
-        <h3>Security for Concerts</h3>
-        <p>Managing and controlling large crowds at concerts and shows.</p>
-      </div>
-      <div class="main-service-card">
-        <div class="service-img-placeholder"></div>
-        <h3>Crowd Management</h3>
-        <p>Trained staff to manage gatherings and maintain discipline.</p>
+      <div class="main-service-card" *ngFor="let img of servicesImages; let i = index">
+        <img [src]="img.src" [alt]="img.alt" class="service-img" />
+        <h3>
+          <ng-container [ngSwitch]="i">
+            <span *ngSwitchCase="0">Event Security</span>
+            <span *ngSwitchCase="1">Personal Security</span>
+            <span *ngSwitchCase="2">Marriage Security</span>
+            <span *ngSwitchCase="3">Industrial Security</span>
+            <span *ngSwitchCase="4">Security for Concerts</span>
+            <span *ngSwitchCase="5">Crowd Management</span>
+          </ng-container>
+        </h3>
+        <p>
+          <ng-container [ngSwitch]="i">
+            <span *ngSwitchCase="0">We maintain safety and order at all types of public or private events.</span>
+            <span *ngSwitchCase="1">Trained bodyguards for personal protection and VIP security.</span>
+            <span *ngSwitchCase="2">Secure and peaceful environment during wedding functions.</span>
+            <span *ngSwitchCase="3">Protection for construction sites, factories, and industrial areas.</span>
+            <span *ngSwitchCase="4">Managing and controlling large crowds at concerts and shows.</span>
+            <span *ngSwitchCase="5">Trained staff to manage gatherings and maintain discipline.</span>
+          </ng-container>
+        </p>
       </div>
     </div>
 
@@ -59,10 +52,8 @@
     </ul>
 
     <h2 class="section-title">Entry Policy</h2>
-    <div class="entry-policy-intro">
-      <p>We reserve the right to refuse entry to:</p>
-    </div>
     <ul class="entry-policy-list">
+      <li><strong>We reserve the right to refuse entry to:</strong></li>
       <li>Intoxicated individuals</li>
       <li>Underage persons</li>
       <li>People displaying aggressive or inappropriate behavior</li>
