@@ -1,6 +1,19 @@
 <!-- Hero Section with Scrolling Background Image -->
 <section class="hero-scroll-bg">
-  <div class="hero-bg-scroll"></div>
+  <div class="hero-img-slider">
+    <img src="/assets/images/bouncer1.jpeg" alt="Bouncer 1" />
+    <img src="/assets/images/bouncer2.jpeg" alt="Bouncer 2" />
+    <img src="/assets/images/bouncer3.jpeg" alt="Bouncer 3" />
+    <img src="/assets/images/bouncer4.jpeg" alt="Bouncer 4" />
+    <img src="/assets/images/bouncer5.jpeg" alt="Bouncer 5" />
+    <img src="/assets/images/bouncer6.jpeg" alt="Bouncer 6" />
+    <img src="/assets/images/bouncer1.jpeg" alt="Bouncer 1" />
+    <img src="/assets/images/bouncer2.jpeg" alt="Bouncer 2" />
+    <img src="/assets/images/bouncer3.jpeg" alt="Bouncer 3" />
+    <img src="/assets/images/bouncer4.jpeg" alt="Bouncer 4" />
+    <img src="/assets/images/bouncer5.jpeg" alt="Bouncer 5" />
+    <img src="/assets/images/bouncer6.jpeg" alt="Bouncer 6" />
+  </div>
   <div class="hero-content-overlay">
     <h1 class="about-title">KK Bouncers Lucknow – Trusted Bouncer & Security Services</h1>
     <a routerLink="/contact" routerLinkActive="active" class="hero-contact-btn">Contact Us</a>
@@ -8,11 +21,14 @@
 </section>
 
 <!-- Plain Business Description Paragraph Centered -->
-<div classplain="-center-desc">
+<div class="plain-center-desc">
+  <div style="width:100%;display:flex;flex-direction:column;align-items:center;">
     
+    <h2 style="font-size:1.5rem; color:#2c3e50; font-weight:700; margin:0 0 0.5rem 0; letter-spacing:0.5px;">Why Choose KK Bouncers Lucknow?</h2>
   <p>
     KK Bouncers Lucknow offers professional security and bouncer services for a wide range of occasions. Whether it's a private event, wedding, industrial site, or public gathering, we provide trained and reliable security personnel to ensure complete safety and crowd control.
   </p>
+  </div>
 </div>
 
 <!-- Services Section with Image Tiles -->
@@ -21,32 +37,44 @@
     <h2 class="section-title">Our Services</h2>
     <div class="home-services-grid">
       <div class="home-service-card">
-        <div class="service-img-placeholder"></div>
+        <div class="service-img-placeholder">
+          <img src="assets/images/bouncer1.jpeg" alt="Event Security" />
+        </div>
         <h3>Event Security</h3>
         <p>Safety and order for all types of events</p>
       </div>
       <div class="home-service-card">
-        <div class="service-img-placeholder"></div>
+        <div class="service-img-placeholder">
+          <img src="assets/images/bouncer2.jpeg" alt="Personal Security" />
+        </div>
         <h3>Personal Security</h3>
         <p>Trained bodyguards for individual protection</p>
       </div>
       <div class="home-service-card">
-        <div class="service-img-placeholder"></div>
+        <div class="service-img-placeholder">
+          <img src="assets/images/bouncer3.jpeg" alt="Marriage Security" />
+        </div>
         <h3>Marriage Security</h3>
         <p>Ensuring smooth and secure wedding functions</p>
       </div>
       <div class="home-service-card">
-        <div class="service-img-placeholder"></div>
+        <div class="service-img-placeholder">
+          <img src="assets/images/bouncer4.jpeg" alt="Industrial Security" />
+        </div>
         <h3>Industrial Security</h3>
         <p>Safeguarding factories and construction sites</p>
       </div>
       <div class="home-service-card">
-        <div class="service-img-placeholder"></div>
+        <div class="service-img-placeholder">
+          <img src="assets/images/bouncer5.jpeg" alt="Security for Concerts" />
+        </div>
         <h3>Security for Concerts</h3>
         <p>Handling large crowds with proper control</p>
       </div>
       <div class="home-service-card">
-        <div class="service-img-placeholder"></div>
+        <div class="service-img-placeholder">
+          <img src="assets/images/bouncer6.jpeg" alt="Crowd Management" />
+        </div>
         <h3>Crowd Management</h3>
         <p>Managing gatherings with discipline and efficiency</p>
       </div>
@@ -57,7 +85,16 @@
 <!-- Gallery Section with Moving Photos -->
 <section class="home-gallery-section">
   <div class="container">
-    <h2 class="section-title">Gallery</h2>
+    <div class="gallery-header">
+      <div class="gallery-subtitle">Gallery</div>
+      <h2 class="section-title">Discover our portfolio of recent projects and creative work.</h2>
+      <div class="gallery-divider"></div>
+      <div class="gallery-description">
+        <strong>Our Work</strong><br />
+        We take pride in delivering high-quality projects for clients across various industries.<br />
+        <span>Browse our gallery to see examples of our web, mobile, and branding projects.</span>
+      </div>
+    </div>
     <div class="gallery-scroll-row">
       <img *ngFor="let img of homeGalleryImages.slice(0,6)" [src]="img.src" [alt]="img.alt" />
       <img *ngFor="let img of homeGalleryImages.slice(0,6)" [src]="img.src" [alt]="img.alt" />
