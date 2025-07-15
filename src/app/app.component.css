@@ -100,11 +100,11 @@ body {
 /* Main Content */
 .main-content {
   flex: 1 0 auto;
-  margin-top: 80px;
+  margin-top: 8px;
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 0%;
   box-sizing: border-box;
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
@@ -126,6 +126,9 @@ body {
   width: 100%;
   margin: 0 auto;
   max-width: 1200px;
+  justify-content: bottom;   /* ✅ center horizontally */
+  align-items: bottom;       /* ✅ center vertically (optional) */
+  flex-direction: column;    /* ✅ stack items vertically if needed */
 }
 
 /* Responsive Design */
