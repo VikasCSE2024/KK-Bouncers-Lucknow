@@ -25,6 +25,7 @@
           "options": {
             "outputPath": "dist/angular-website",
             "index": "src/index.html",
+            "baseHref": "/KK-Bouncers-Lucknow/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
