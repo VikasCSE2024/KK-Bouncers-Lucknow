@@ -86,14 +86,7 @@
 <section class="home-gallery-section">
   <div class="container">
     <div class="gallery-header">
-      <div class="gallery-subtitle">Gallery</div>
-      <h2 class="section-title">Discover our portfolio of recent projects and creative work.</h2>
-      <div class="gallery-divider"></div>
-      <div class="gallery-description">
-        <strong>Our Work</strong><br />
-        We take pride in delivering high-quality projects for clients across various industries.<br />
-        <span>Browse our gallery to see examples of our web, mobile, and branding projects.</span>
-      </div>
+      <div class="gallery-subtitle">Gallery</div>      
     </div>
     <div class="gallery-scroll-row">
       <img *ngFor="let img of homeGalleryImages.slice(0,6)" [src]="img.src" [alt]="img.alt" />
